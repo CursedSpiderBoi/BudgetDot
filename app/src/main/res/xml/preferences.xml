@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/appearance">
+
+        <ListPreference
+            app:key="theme"
+            app:title="@string/theme"
+            app:summary="@string/theme_summary"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:defaultValue="system"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/currency">
+
+        <ListPreference
+            app:key="currency"
+            app:title="@string/currency"
+            app:summary="@string/currency_summary"
+            app:entries="@array/currency_entries"
+            app:entryValues="@array/currency_values"
+            app:defaultValue="USD"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/about">
+
+        <Preference
+            app:key="version"
+            app:title="@string/version"
+            app:summary="1.0.0"
+            app:iconSpaceReserved="false"/>
+
+        <Preference
+            app:key="privacy_policy"
+            app:title="@string/privacy_policy"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

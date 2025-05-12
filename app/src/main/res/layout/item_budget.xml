@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="?attr/colorSurfaceVariant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Budget Name -->
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            tools:text="Groceries"/>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="12dp"
+            android:max="100"
+            android:progress="65"
+            android:progressTint="?attr/colorPrimary"/>
+
+        <!-- Budget Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Limit -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/limit"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp"
+                    tools:text="$500.00"/>
+            </LinearLayout>
+
+            <!-- Spent -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spent"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_spent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp"
+                    tools:text="$325.00"/>
+            </LinearLayout>
+
+            <!-- Remaining -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remaining"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_remaining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp"
+                    tools:text="$175.00"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Period Chip -->
+        <TextView
+            android:id="@+id/tv_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_chip"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="12sp"
+            tools:text="Monthly"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

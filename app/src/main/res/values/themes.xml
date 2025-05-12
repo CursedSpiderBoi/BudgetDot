@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.BudgetDot" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here -->
+        <item name="toolbarStyle">@style/Widget.BudgetDot.Toolbar</item>
+    </style>
+
+    <!-- AppBar overlay theme -->
+    <style name="Theme.BudgetDot.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar">
+        <item name="android:textColorPrimary">?android:attr/textColorPrimary</item>
+        <item name="android:textColorSecondary">?android:attr/textColorSecondary</item>
+        <item name="colorControlNormal">?android:attr/textColorSecondary</item>
+        <item name="actionMenuTextColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <!-- Popup overlay theme -->
+    <style name="Theme.BudgetDot.PopupOverlay" parent="ThemeOverlay.Material3.Light">
+        <item name="android:textColorPrimary">?android:attr/textColorPrimary</item>
+        <item name="android:textColorSecondary">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Custom Toolbar style -->
+    <style name="Widget.BudgetDot.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.BudgetDot.Toolbar.Title</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.BudgetDot.Toolbar.Subtitle</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="popupTheme">@style/Theme.BudgetDot.PopupOverlay</item>
+    </style>
+
+    <!-- Toolbar text appearance -->
+    <style name="TextAppearance.BudgetDot.Toolbar.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.BudgetDot.Toolbar.Subtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- In your theme.xml -->
+<!--    <item name="colorSurface" type="">@color/surface</item>-->
+<!--    <item name="colorOutline" type="">@color/outline</item>-->
+<!--    <color name="outline">#000000</color>-->
+</resources>

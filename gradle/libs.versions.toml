@@ -1,0 +1,42 @@
+[versions]
+agp = "8.9.0"
+cardview = "1.0.0"
+colorpicker = "0.0.15"
+discreteScrollview = "1.0.3"
+#extensions = "1.1.1" # Keep if you intend to use it
+junit = "4.13.2"
+junitVersion = "1.2.1" # For androidx.test.ext:junit
+espressoCore = "3.6.1"
+appcompat = "1.7.0" # Keep the latest version
+material = "1.12.0" # Keep the latest valid version
+activity = "1.10.1"
+constraintlayout = "2.2.1" # Keep the latest version
+mpandroidchart = "v3.1.0"
+recyclerview = "1.3.1"
+roomCompiler = "2.5.2"
+roomRuntime = "2.5.2"
+preference = "1.2.1"
+lifecycle = "1.1.1" # android-arch-lifecycle-extensions uses this
+litertSupportApi = "1.2.0"
+
+[libraries]
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+colorpicker = { module = "com.github.QuadFlask:colorpicker", version.ref = "colorpicker" }
+discrete-scrollview = { module = "com.github.amarjain07:StickyScrollView", version.ref = "discreteScrollview" }
+android-arch-lifecycle-extensions = { module = "android.arch.lifecycle:extensions", version.ref = "lifecycle" }
+junit = { group = "junit", name = "junit", version.ref = "junit" } # JUnit 4
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" } # AndroidX JUnit
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" } # Consolidated appcompat
+material = { group = "com.google.android.material", name = "material", version.ref = "material" } # Consolidated material
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" } # Consolidated constraintlayout
+mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+litert-support-api = { group = "com.google.ai.edge.litert", name = "litert-support-api", version.ref = "litertSupportApi" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
